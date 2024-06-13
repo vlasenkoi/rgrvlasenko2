@@ -1,0 +1,415 @@
+
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background: #0c0c0b;
+	color: #6d6b6b;
+	font-family: 'Times New Roman', Times, serif;
+
+}
+.header_section {
+	display: flex;
+	align-items: center;
+
+}
+.header_item {
+	padding: 10px 10px;
+	font-size: 20px;
+	margin-left: 5px;
+
+
+}
+.header_item:hover {
+	background-color: #fcff35;
+	 border-radius: 4px;
+
+}
+.header_logo{
+	font-weight: bold;
+
+}
+.headerButton{
+cursor: pointer;	
+}
+
+.container{
+	background-color: #ffffff;
+
+
+}
+
+
+.navbar {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+	background-color: #ffffff;
+}
+.navbar .container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-menu{
+	list-style-type: none;
+	padding-left: 50px;
+	margin-bottom: 0;
+}
+.navbar-menu li {
+	display: inline-block;
+
+}
+.navbar-menu li a:hover {
+	opacity: 5;
+	color: aquamarine;
+	
+}
+.navbar-menu li a {
+	display: inline-block;
+	color: #000000;
+	opacity: 0,6;
+	text-decoration: none;	
+	padding: 10px;
+	transition: all 0.7s ease-in-out;
+}
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.callback {
+	margin-left: 30px;
+	padding: 10px 30px;
+	background-color: black;
+	border-radius: 100px;
+	color: aliceblue;
+	text-decoration: none;
+	transition: .1s ease-in-out;
+	box-shadow: 0 4px 6px rgba(10, 10, 10, 0.2)
+}
+.callback:hover{
+	color: aqua;
+	transition: all 0.7s ease-in-out;
+	transform: scale(1.04);
+	box-shadow: 0 9px 9px rgba(10, 10, 10, 0.5)
+}
+.navbar-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+	transition: all 0.7s ease-in-out;
+	float: left;
+}
+.navbar-brand:hover {
+	color: aquamarine;
+
+}
+.zagolovok{
+    font-size: 36px; /* Розмір шрифту */
+    font-weight: bold; /* Жирний шрифт */
+    color: #333; /* Колір тексту */
+    text-align: center; /* Вирівнювання по центру */
+    margin-top: 20px; /* Відступ зверху */
+    margin-bottom: 20px; /* Відступ знизу */
+    text-transform: uppercase; /* Перетворення тексту великими літерами */
+    letter-spacing: 2px; /* Міжлітерний інтервал */
+	background-color: #ffffff;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.slider {
+    float: left; /* Розміщення зліва */
+    width: 1300px; /* Фіксована ширина слайда */
+	height: 1500px;
+}
+
+.my-carousel {
+    width: 1100px; /* Задайте бажану ширину каруселі */
+    height: 700px; /* Задайте бажану висоту каруселі */
+    margin: 0 auto; /* Центрування каруселі на сторінці */
+	float: left;
+}
+.b {
+    display: flex; /* Встановлюємо flexbox */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+}
+
+.b img {
+    margin-left: 5px; /* Відступ зліва від зображення (змініть значення на потрібне) */
+    max-width: 100%; /* Забезпечуємо адаптивність зображення */
+}
+.nado {
+	color: #000000; /* Колір тексту */
+    text-align: center; /* Вирівнювання по центру */
+    margin-top: 10px; /* Відступ зверху */
+    letter-spacing: 2px; /* Міжлітерний інтервал */
+	font-size: 20px;
+}
+.wrapper{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	 display: grid;
+	 grid-gap: 3px;
+   
+	
+	 }
+	 .item{
+		 padding: 10px;
+		 border: 1px solid black;
+	 }
+	 .item_1{
+		grid-column:1/4 ;
+		grid-row:1/2 ;
+		background-color: rgb(255, 255, 255);
+		height:290px ;
+		width:790px;
+		margin-left: 5px;}
+
+	.wrapper2{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+		display: grid;
+		grid-gap: 3px;
+}
+	 
+	 .item_2{
+		grid-column:1/1 ;
+		grid-row: 1/1;
+		background-color: gray;
+		width:100px ;
+		height:100px ;
+		float: left;
+	}
+	.item_3{
+		grid-column:1/1 ;
+		grid-row:1/1 ;
+		background-color: aquamarine;
+		width:100px  ;
+		height:100px ;
+	}
+	.item_4{
+		grid-column:1/1 ;
+		grid-row:1/1;
+		background-color:rgb(212, 45, 123) ;
+		width: 100px;
+		height: 100px;
+	}
+	.item_5 {
+		grid-column:1/1;
+		grid-row: 1/1;
+	background-color:yellow;
+	width: 100px;
+	height: 100px;
+	
+	}
+	.item_6{
+		grid-column:1/1;
+		grid-row:1/1 ;
+		background-color: green;
+		width: 100px ;
+		height:auto ;
+	}
+	.item_7{
+		grid-column:1/6 ;
+		grid-row: 1/6;
+		background-color: rgb(4, 0, 255);
+		width: auto;
+		height:auto;
+	}
+	footer {
+		margin-top: auto;
+		background-color: #93929b;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+	footer a {
+		color: #ffffff;
+		font-size: 14px;
+		margin-left: 10px		
+	}
+	footer nav a:hover{
+		border-bottom: 1px solid rgb(0, 0, 0);
+	}
+	.sociale img{
+		margin-left: 10px;
+		margin: bottom 10px;
+	}
+	.sociale img:hover {
+		background: #4b48f3;
+		border-radius: 50%;
+
+	}
+footer p {
+	color: #000;
+	font-size: 20px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.item_15 {
+	grid-column: 1/3;
+	grid-row: 1/1;
+}
+.item_25 {
+	grid-column: 3/5;
+	grid-row: 1/1;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news img {
+    width: 200px; /* розмір картинки */
+    height: auto;
+    margin-right: 20px;
+}
+
+.news .description {
+    flex-grow: 1;
+}
+
+.news h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+      .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* змінено розмір зображень */
+            gap: 20px;
+            padding: 0 20px; /* відступи зліва і справа */
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+		
+
+
+@media (max-width: 1200px) {
+	.header_item {
+		font-size: 18px;
+	}
+	.container {
+		padding: 20px;
+	}
+
+}
+
+
+@media (max-width: 992px) {
+	.header_item {
+		font-size: 16px;
+	}
+	.container {
+		padding: 15px;
+	}
+	
+}
+
+
+@media (max-width: 768px) {
+	.header_item {
+		font-size: 14px;
+	}
+	.container {
+		padding: 10px;
+	}
+	
+}
+
+
+@media (max-width: 576px) {
+	.header_item {
+		font-size: 12px;
+	}
+	.container {
+		padding: 5px;
+	}
+	
+}
+
+.text-style {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; 
+}
+
+
+.img-fluid {
+    max-width: 60%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUPP</title>
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/_variables.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <style>
+        .custom-button {
+            background-color: #0b0070; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 600px;
+            height: 50px; 
+        }
+        
+        .custom-button:hover {
+            background-color: #403b85; 
+        }
+        
+        .header_section {
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            color: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .header_item {
+            padding: 10px;
+        }
+        
+        #content {
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .link-style {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .link-style:hover {
+            text-decoration: underline;
+            color: #403b85;
+        }
+		body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1; 
+}
+
+
+
+    </style>
+    <nav class="navbar">
+        <div class="container">
+            <a href="Головна.html" class="navbar-brand"><img src="scree/nupp.logo.png" width="90" height="90" alt="NUPP"></a>
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="Головна.html">Головна</a></li>
+                    <li><a href="Про університет.html">Про університет</a></li>
+					<li><a href="новини.html">Новини</a></li>
+					<li><a href="галерея.html">Галерея</a></li>
+					<li><a href="Фінанси.html">Реквізити</a></li>
+					<li><a href="контакти.html">Контакти</a></li>
+                </ul>
+                <a href="#" class="callback" onclick="scrollToBottom()">Соціальні медіа</a>
+
+                <script>
+                function scrollToBottom() {
+                    // Прокручуємо сторінку до нижньої частини з плавним ефектом
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                }
+                </script>
+                    
+            </div>
+        </div>
+    </nav>
+    
+<div class="wrapper"></div>
+    <div class="header_section">            
+        <div class="header_item headerButton">
+            <button class="custom-button" onclick="loadContent('bank-details')">Банківські реквізити</button>
+        </div>
+        <div class="header_item headerButton">
+            <button class="custom-button" onclick="loadContent('online-payment')">Онлайн оплата </button>
+        </div>
+    </div>
+    
+    <div id="content">
+    
+    </div>
+    
+    <script>
+        function loadContent(section) {
+            let contentDiv = document.getElementById('content');
+            
+            if (section === 'bank-details') {
+                contentDiv.innerHTML = `
+                    <h1>Банківські реквізити</h1>
+                    <p><span class="highlight">Одержувач:</span> Національний університет «Полтавська політехніка імені Юрія Кондратюка»</p>
+                    <p><span class="highlight">Код ЄДРПОУ:</span> 02071100</p>
+                    <p><span class="highlight">Банк:</span> Державна казначейська служба України в м. Києві (ДКСУ в м. Київ)</p>
+                    <p><span class="highlight">МФО:</span> 820172</p>
+                    <p><span class="highlight">IBAN:</span> UA108201720313271003201009727</p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/navchannia-studentiv-aspirantiv.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за навчання студентів, аспірантів</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/navchannia-na-pidgotovchih-kursah.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за навчання на підготовчих курсах</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/navchannia-na-pidgotovchomu-viddilenni.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за навчання на підготовчому відділенні</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/navchannia-na-viiskovii-kafedri.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за навчання на військовій кафедрі</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/pidvishchennia-kvalifikacii.pdf"  target="_blank" class="link-style"><span class="highlight">Оплата за підвищення кваліфікації</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/vigotovlennia-dublikativ-diplomiv-studentskih-kvitkiv.pdf" target="_blank"  class="link-style"><span class="highlight">Оплата за виготовлення дублікатів дипломів, студентських квитків</span></a></p>
+                    <p><a href=https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/zaproshennia-dlia-inozemnih-gromadian.pdf" target="_blank"  class="link-style"><span class="highlight">Оплата за запрошення для іноземних громадян</span></a></p>
+                    <p><span class="highlight">IBAN:</span> UA118201720313241003202009727</p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/prozhivannia-v-gurtozhitku.pdf"  target="_blank" class="link-style"><span class="highlight">Оплата за проживання в гуртожитку</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/poligraphichni-poslugi.pdf"  target="_blank" class="link-style"><span class="highlight">Оплата за поліграфічні послуги</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/nadannia-poslug-z-trenuvannia.pdf"  target="_blank" class="link-style"><span class="highlight">Оплата за надання послуг з тренування</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/publikacia-statei-u-fahovih-vidanniah.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за публікації статей у фахових виданнях</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/legalizatsia-dokumentiv-apostil.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за легалізацію документів, апостиль</span></a></p>
+                    <p><span class="highlight">IBAN:</span> UA778201720313201002201009727</p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/nadannia-poslug-vikonannia-naukovo-doslidnih-ta-doslidno-konst-robit.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за виконання науково-дослідних та дослідно-конструкторських робіт (надання послуг)</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/provedennia-konsultacii-z-pitan-naukovih-doslidzhen-ih-organizacii-ta-naukovogo-obslugovuvannia.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за проведення консультацій з питань наукових досліджень, їх організації та наукового обслуговування</span></a></p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/uchast-u-konferenciah-seminarah.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за участь у конференціях, семінарах</span></a></p>
+                    <p><a href=https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/provedennia-treningu-z-pitann.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за проведення тренінгу з питань … (в залежності від умов договору)</span></a></p>
+					<p><span class="highlight">IBAN:</span> UA128201720313211003203009727</p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/nadannia-primishchennia-v-orendu.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за надання приміщення в оренду</span></a></p>
+                    <p><span class="highlight">IBAN:</span> UA758201720343161003200009727</p>
+                    <p><a href="https://nupp.edu.ua/uploads/files/0/main/page/bankivska-rekviziti/vidshkoduvannia-vitrat-ta-nadannia-kom-poslug-orendariu.pdf" target="_blank" class="link-style"><span class="highlight">Оплата за відшкодування витрат балансоутримувача на утримання орендованого нерухомого майна та надання комунальних послуг орендарю</span></a></p>
+                `;
+            } else if (section === 'online-payment') {
+                contentDiv.innerHTML = `
+                    <h1><a href="Финанси2.html" target="_blank">Перейти до оплати</a></h1>
+                    <p></p>`;
+            } 
+        }
+    </script>
+<footer>
+	
+    <a href="Головна.html">Головна</a>
+    <a href="Про університет.html">Про університет</a>
+    <a href="Фінанси.html">Реквізити</a>
+    <a href="новини.html">Новини</a>
+    <a href="галерея.html">Галерея</a>
+    <a href="контакти.html">Контакти</a>
+
+<div class="logo">
+    <a href="Головна.html"><img src="scree/nupp.logo.png" width="140" height="140"></a>
+</div>
+<div class="sociale">
+    <a href="https://www.instagram.com/poltava_polytechnic/"target="_blank"><img src="socible icon/kisspng-scalable-vector-graphics-clip-art-instagram-png-file-5a75716ab5b203.3937501115176461867442.png" width="50" height="50"></a>
+    <a href="https://web.telegram.org/k/#@nupp_help"target="_blank"><img src="socible icon/kisspng-social-media-telegram-logo-computer-icons-telegram-5abd1ce13fc9e3.9243808215223431372613.png" width="50" height="50" ></a>
+    <a href="https://www.youtube.com/channel/UCoNxvmDb-4fb1gjBZ1AEknA"target="_blank"><img src="socible icon/kisspng-youtube-logo-computer-icons-5adcd5332b87b3.1566785315244219391783.png" width="50" height="50" ></a>
+</div>
+<p>Created Vlasenko Egor</p>
+</footer>
+
+</body>
+</html>
+</body>
+</html>
